@@ -8,7 +8,7 @@
     <link rel="stylesheet" type ="text/css" href="css/main.css">
 
     <!-- Script(s) -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/JavaScript" src="js/scripts.js" defer></script>
 
 </head>
 <body>
