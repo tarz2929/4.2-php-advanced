@@ -12,7 +12,14 @@
 
 </head>
 <body>
-<h1>Webpage</h1>
+    <h1>Webpage</h1>
+    <?php 
+        // include './templates/navigation.php'; 
+        //Dirname grabs the currently executable file
+        include dirname( __FILE__).'/navigation.php';
+
+    ?>
+
 
     
 
