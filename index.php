@@ -8,7 +8,8 @@ include './templates/header.php';
 ?>
 
 <p>
-  Welcome to our PHP homepage!
+  Welcome <?php echo $GLOBALS['pageTitle']; ?>
+  page!
 </p>
 
 <?php // Show our footer.

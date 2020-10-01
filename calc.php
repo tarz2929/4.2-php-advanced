@@ -10,5 +10,10 @@ include './templates/header.php';
   Welcome to our Calculator page!
 </p>
 
+<form>
+
+
+</form>
+
 <?php // Show our footer.
 include './templates/footer.php';
