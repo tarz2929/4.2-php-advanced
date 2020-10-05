@@ -13,5 +13,11 @@
              </a>
         </li>
 
+        <li>
+            <a href="cat-facts-api.php">
+                Cat Facts (External API)
+             </a>
+        </li>
+
     </ul>
 </nav>
