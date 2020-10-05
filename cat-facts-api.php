@@ -17,6 +17,26 @@ if ( $dailyCatFactResponse)
     <?php
 }
 
+?>
+<h2>Request Animal Facts</h2>
+<form action="#" method="POST">
+    <label for="amount"> Enter the amount of facts:
+    <input type="number" id="amount" name="amount"></label>
+    <label for="animal-type">Enter the type of animal:
+    <input type="text" id ="animal-type" name="type">
+    </label>
+    <input type="submit" value="Get Animal Facts!">
+    </form>
+
+<?php
+
+$factsListResponse = file_get_contents(
+    "https://cat-fact.herokuapp.com/facts/random?amount={$_POST
+        ['amount']}&animal_type={$_POST
+            ['type']}"
+);
+
+var_dump( $factsListResponse);
 
 
 include './templates/footer.php';
