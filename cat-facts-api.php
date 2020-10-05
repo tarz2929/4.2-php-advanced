@@ -36,7 +36,27 @@ $factsListResponse = file_get_contents(
             ['type']}"
 );
 
-var_dump( $factsListResponse);
+if( $factsListResponse )
+{
+    $factsList = json_decode( $factsListResponse );
+    ?>
+        <h2>
+            List of
+            <?php echo ucfirst( $_POST['type']); ?>
+        </h2>
+        <ol>
+        <?php foreach ( $factsList as $fact): ?>
+        <li>
+            <?php echo $fact->text; ?>
+        </li>
+        <?php endforeach; ?>          
+            
+           
+        </ol>
+        <?php
+}
+
+// var_dump( $factsListResponse);
 
 
 include './templates/footer.php';
