@@ -23,7 +23,12 @@ if ( $dailyCatFactResponse)
     <label for="amount"> Enter the amount of facts:
     <input type="number" id="amount" name="amount"></label>
     <label for="animal-type">Enter the type of animal:
-    <input type="text" id ="animal-type" name="type">
+    <select id="animal-type" name="type">
+    <option value="cat">Cat</option>
+    <option value="horse">Horse</option>
+    <option value="dog">Dog</option>
+    <option value="snail">Snail</option>
+    </select>
     </label>
     <input type="submit" value="Get Animal Facts!">
     </form>
