@@ -49,6 +49,7 @@ if( $factsListResponse )
             List of
             <?php echo ucfirst( $_POST['type']); ?>
         </h2>
+        
         <ol>
         <?php foreach ( $factsList as $fact): ?>
         <li>
